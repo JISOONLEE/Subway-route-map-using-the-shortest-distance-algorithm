@@ -39,15 +39,12 @@ for i in range(len(transfer_station_file)):
 
         if transfer in graph[0] and transfer_finish in graph[0]:
             graph[graph[0].index(transfer)][graph[0].index(transfer_finish)] = transfer_station_file.loc[i]['환승거리(m)']*14
-            
-#print(graph[graph[0].index('동묘앞1')][graph[0].index('동묘앞6')])
-#print(graph[graph[0].index('동묘앞6')][graph[0].index('동묘앞1')])
-
 
 for k in range(1, len(station_file)+1):
     for a in range(1, len(station_file)+1):
         for b in range(1, len(station_file)+1):
             graph[a][b] = min(graph[a][b], graph[a][k]+graph[k][b])
+
 start = input("시작역을 입력하세요 : ")
 finish = input("도착역을 입력하세요 : ")
 
