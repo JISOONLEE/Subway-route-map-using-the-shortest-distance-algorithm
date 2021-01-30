@@ -30,8 +30,8 @@ public class subwayController {
 		
 		switch (developer) {
 			case "jisoon_dijkstra":
-				ProcessBuilder pa = new ProcessBuilder("C:\\Users\\이지순\\AppData\\Local\\conda\\conda\\envs\\tutorial\\python.exe", 
-						"C:\\Users\\이지순\\PycharmProjects\\Shortest_distance_project\\Dijkstra_Subway.py", start_info, finish_info);
+				ProcessBuilder pa = new ProcessBuilder("C:\\Users\\***\\AppData\\Local\\conda\\conda\\envs\\tutorial\\python.exe", 
+						"C:\\Users\\***\\PycharmProjects\\Shortest_distance_project\\Dijkstra_Subway.py", start_info, finish_info);
 				try {
 					Process p = pa.start();
 					BufferedReader bf = new BufferedReader(new InputStreamReader(p.getInputStream()));
@@ -43,7 +43,7 @@ public class subwayController {
 					}
 					model.addAttribute("start", Integer.toString(start_line)+"호선 "+start+"역");
 					model.addAttribute("finish", Integer.toString(finish_line)+"호선 "+finish+"역");
-					model.addAttribute("developer", "이지순");
+					model.addAttribute("developer", "개발자1");
 					model.addAttribute("algorithm", "Dijkstra");
 					model.addAttribute("route", route[0]);
 					model.addAttribute("distance", route[1]);
@@ -54,8 +54,8 @@ public class subwayController {
 				}
 				break;
 			case "jisoon_floyd":
-				ProcessBuilder pb = new ProcessBuilder("C:\\Users\\이지순\\AppData\\Local\\conda\\conda\\envs\\tutorial\\python.exe", 
-						"C:\\Users\\이지순\\PycharmProjects\\Shortest_distance_project\\FloydWarshall_Subway.py", start_info, finish_info);
+				ProcessBuilder pb = new ProcessBuilder("C:\\Users\\***\\AppData\\Local\\conda\\conda\\envs\\tutorial\\python.exe", 
+						"C:\\Users\\***\\PycharmProjects\\Shortest_distance_project\\FloydWarshall_Subway.py", start_info, finish_info);
 				try {
 					Process p2 = pb.start();
 					BufferedReader bf2 = new BufferedReader(new InputStreamReader(p2.getInputStream()));
@@ -67,7 +67,7 @@ public class subwayController {
 					}
 					model.addAttribute("start", Integer.toString(start_line)+"호선 "+start+"역");
 					model.addAttribute("finish", Integer.toString(finish_line)+"호선 "+finish+"역");
-					model.addAttribute("developer", "이지순");
+					model.addAttribute("developer", "개발자1");
 					model.addAttribute("algorithm", "FloydWarshall");
 					model.addAttribute("route", route2[0]);
 					model.addAttribute("distance", route2[1]);
