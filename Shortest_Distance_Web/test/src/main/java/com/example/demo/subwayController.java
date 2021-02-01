@@ -24,16 +24,13 @@ public class subwayController {
 		String s = "";
 		String dev = "";
 		String algo = "";
-		//C:\Users\이지순\AppData\Local\conda\conda\envs\tutorial\python.exe
-		//C:\Users\이지순\PycharmProjec7ts\Shortest_distance_project\Dijkstra_Subway.py
-		//%windir%\System32\cmd.exe "/K" C:\ProgramData\Anaconda3\Scripts\activate.bat C:\ProgramData\Anaconda3
 		
 		switch (developer) {
 			case "dev1_dijkstra":
 				dev = "개발자1";
 				algo = "다익스트라";
-				ProcessBuilder pa = new ProcessBuilder("C:\\Users\\이지순\\AppData\\Local\\conda\\conda\\envs\\tutorial\\python.exe", 
-						"C:\\Users\\이지순\\PycharmProjects\\Shortest_distance_project\\Dijkstra_Subway.py", info);
+				ProcessBuilder pa = new ProcessBuilder("Python Path"+"\\AppData\\Local\\conda\\conda\\envs\\tutorial\\python.exe", 
+						"Python File Path" + "\\Dijkstra_Subway.py", info);
 				try {
 					Process p = pa.start();
 					BufferedReader bf = new BufferedReader(new InputStreamReader(p.getInputStream()));
@@ -47,8 +44,8 @@ public class subwayController {
 			case "dev1_floyd":
 				dev = "개발자1";
 				algo = "플로이드 와샬";
-				ProcessBuilder pb = new ProcessBuilder("C:\\Users\\이지순\\AppData\\Local\\conda\\conda\\envs\\tutorial\\python.exe", 
-						"C:\\Users\\이지순\\PycharmProjects\\Shortest_distance_project\\FloydWarshall_Subway.py", info);
+				ProcessBuilder pb = new ProcessBuilder("Python Path"+"\\AppData\\Local\\conda\\conda\\envs\\tutorial\\python.exe", 
+						"Python File Path" + "FloydWarshall_Subway.py", info);
 				try {
 					Process p2 = pb.start();
 					BufferedReader bf2 = new BufferedReader(new InputStreamReader(p2.getInputStream()));
@@ -62,8 +59,8 @@ public class subwayController {
 			case "dev2_dijkstra":
 				dev = "개발자2";
 				algo = "다익스트라";
-				ProcessBuilder pc = new ProcessBuilder("C:\\Users\\이지순\\AppData\\Local\\conda\\conda\\envs\\tutorial\\python.exe", 
-						"C:\\Users\\이지순\\PycharmProjects\\Shortest_distance_project\\Dijkstra_Searching_SubwayRoute.py", info);
+				ProcessBuilder pc = new ProcessBuilder("Python Path"+"\\AppData\\Local\\conda\\conda\\envs\\tutorial\\python.exe", 
+						"Python File Path" + "\\Dijkstra_Searching_SubwayRoute.py", info);
 				try {
 					Process p3 = pc.start();
 					BufferedReader bf3 = new BufferedReader(new InputStreamReader(p3.getInputStream(), "euc-kr"));
@@ -77,8 +74,8 @@ public class subwayController {
 			case "dev2_spfa":
 				dev = "개발자2";
 				algo = "SPFA";
-				ProcessBuilder pd = new ProcessBuilder("C:\\Users\\이지순\\AppData\\Local\\conda\\conda\\envs\\tutorial\\python.exe", 
-						"C:\\Users\\이지순\\PycharmProjects\\Shortest_distance_project\\SPFA_Searching_SubwayRoute.py", info);
+				ProcessBuilder pd = new ProcessBuilder("Python Path"+"\\AppData\\Local\\conda\\conda\\envs\\tutorial\\python.exe", 
+						"Python File Path" + "\\SPFA_Searching_SubwayRoute.py", info);
 				try {
 					Process p4 = pd.start();
 					BufferedReader bf4 = new BufferedReader(new InputStreamReader(p4.getInputStream(), "euc-kr"));
