@@ -88,8 +88,8 @@ def dijkstra(dic, start, finish):
     return dic, routing
 
 if __name__ == '__main__':
-    station_file = pd.read_excel('C:\\Users\\이지순\\PycharmProjects\\Shortest_distance_project\\SeoulMetro_StationSpacing(202003)_edit.xlsx')
-    transfer_station_file = pd.read_excel('C:\\Users\\이지순\\PycharmProjects\\Shortest_distance_project\\transit_station_distance.xlsx')
+    station_file = pd.read_excel("User's File Path" + "SeoulMetro_StationSpacing(202003)_edit.xlsx")
+    transfer_station_file = pd.read_excel("User's File Path"+"transit_station_distance.xlsx")
 
     dic = data_station(station_file)
     dic = data_trasfer(dic, transfer_station_file)
