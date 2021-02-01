@@ -56,8 +56,8 @@ def Floydwarshall(size, graph):
     return graph
 
 if __name__ == '__main__':
-    station_file = pd.read_excel('C:\\Users\\이지순\\PycharmProjects\\Shortest_distance_project\\SeoulMetro_StationSpacing(202003)_edit.xlsx')
-    transfer_station_file = pd.read_excel('C:\\Users\\이지순\\PycharmProjects\\Shortest_distance_project\\transit_station_distance.xlsx')
+    station_file = pd.read_excel("User's STS workspace Path" +"\\SeoulMetro_StationSpacing(202003)_edit.xlsx")
+    transfer_station_file = pd.read_excel("User's STS workspace Path" +"transit_station_distance.xlsx")
 
     station_graph = createGraphData(station_file)
     trasfer_graph = addTransferData(transfer_station_file, station_graph)
