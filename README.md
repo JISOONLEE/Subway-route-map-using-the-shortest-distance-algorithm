@@ -16,7 +16,8 @@
 + python3
 
 ### 시스템 설계
-<img src= "" width="500">
+<img src= "https://github.com/JISOONLEE/Subway-route-map-using-the-shortest-distance-algorithm/blob/main/img/diagram.PNG" width="500">
 
 ### 결과
-<img src= "" width="500">
+<img src= "https://github.com/JISOONLEE/Subway-route-map-using-the-shortest-distance-algorithm/blob/main/img/ui.png" width="500">
+<img src= "https://github.com/JISOONLEE/Subway-route-map-using-the-shortest-distance-algorithm/blob/main/img/result.png" width="500">
